@@ -6,7 +6,7 @@
 /*   By: gnyssens <gnyssens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 15:58:38 by gnyssens          #+#    #+#             */
-/*   Updated: 2024/04/24 17:47:05 by gnyssens         ###   ########.fr       */
+/*   Updated: 2024/04/24 18:24:33 by gnyssens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ void	specifier(const char **dptr_f, int *count_ptr, va_list *arg_ptr)
 		write_u(dptr_f, count_ptr, arg_ptr);
 	else if (*(*dptr_f) == 'p')
 		write_address(dptr_f, count_ptr, arg_ptr);
+	//else if (*(*dptr_count) == 'x')
+		//write_x()
 }
 
 int	ft_printf(const char *format, ...)
@@ -55,13 +57,16 @@ int	ft_printf(const char *format, ...)
 	return (count);
 }
 
-
+/*
 int main(void)
 {
 	int a = 5;
 
-	printf(" real printf address of var `a`: %p\n", &a);
-	ft_printf("my ft_printf address of var `a`: %p\n", &a);
+	int real = printf("%%\n%c\n%s\n%d\n%p\n", 'w', "teststring", 1234, &a);
+	int mine = ft_printf("%%\n%c\n%s\n%d\n%p\n", 'w', "teststring", 1234, &a);
+
+	printf("\nreal nb of char's = %d, mine nb of char's = %d", real, mine);
 
 	return 0;
 }
+*/
