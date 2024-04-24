@@ -34,8 +34,10 @@ void	specifier(const char **dptr_f, int *count_ptr, va_list *arg_ptr)
 		write_u(dptr_f, count_ptr, arg_ptr);
 	else if (*(*dptr_f) == 'p')
 		write_address(dptr_f, count_ptr, arg_ptr);
-	//else if (*(*dptr_count) == 'x')
-		//write_x()
+	else if (*(*dptr_f) == 'x')
+		write_hexa(dptr_f, count_ptr, arg_ptr);
+	else if (*(*dptr_f) == 'X')
+		write_maj_hexa(dptr_f, count_ptr, arg_ptr);
 }
 
 int	ft_printf(const char *format, ...)

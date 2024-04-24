@@ -34,4 +34,11 @@ void	put_address(unsigned long long nbr, int *count_ptr);
 void	specifier(const char **dptr_format, int *count_ptr, va_list *arg_ptr);
 int		ft_printf(const char *format, ...);
 
+// PROTOTYPES POUR HEXA
+
+void	write_hexa(const char **dptr_f, int *count_ptr, va_list *arg_ptr);
+void	put_hexa(unsigned int nb, int *count_ptr);
+void	write_maj_hexa(const char **dptr_f, int *count_ptr, va_list *arg_ptr);
+void	put_maj_hexa(unsigned int nb, int *count_ptr);
+
 #endif
