@@ -6,7 +6,7 @@
 /*   By: gnyssens <gnyssens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 15:58:38 by gnyssens          #+#    #+#             */
-/*   Updated: 2024/04/24 18:24:33 by gnyssens         ###   ########.fr       */
+/*   Updated: 2024/04/25 15:15:28 by gnyssens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,21 +54,6 @@ int	ft_printf(const char *format, ...)
 		else
 			specifier(&format, &count, &args);
 	}
-
 	va_end(args);
 	return (count);
 }
-
-/*
-int main(void)
-{
-	int a = 5;
-
-	int real = printf("%%\n%c\n%s\n%d\n%p\n", 'w', "teststring", 1234, &a);
-	int mine = ft_printf("%%\n%c\n%s\n%d\n%p\n", 'w', "teststring", 1234, &a);
-
-	printf("\nreal nb of char's = %d, mine nb of char's = %d", real, mine);
-
-	return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: gnyssens <gnyssens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:03:16 by gnyssens          #+#    #+#             */
-/*   Updated: 2024/04/24 17:47:28 by gnyssens         ###   ########.fr       */
+/*   Updated: 2024/04/25 15:23:43 by gnyssens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	write_string(const char **dptr_f, int *ptr_count, va_list *arg_ptr)
 
 void	write_int(const char **dptr_f, int *count_ptr, va_list *arg_ptr)
 {
-	int nb;
+	int	nb;
 
 	nb = va_arg(*arg_ptr, int);
 	if (nb == -2147483648)
