@@ -6,7 +6,7 @@
 /*   By: gnyssens <gnyssens@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 15:59:45 by gnyssens          #+#    #+#             */
-/*   Updated: 2024/04/24 17:33:14 by gnyssens         ###   ########.fr       */
+/*   Updated: 2024/04/29 09:42:52 by gnyssens         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <stdarg.h>
 # include <stdio.h>
 # include <stdlib.h>
+# include <limits.h>
 
 // PROTOTYPES FONCTIONS
 
